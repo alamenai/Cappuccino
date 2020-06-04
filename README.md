@@ -1,31 +1,33 @@
 <h1 align="center">Cappuccino</h1>
 
 <h4 align="center"><i>A mostly reasonable approach and non-boring guide for Junior Developers to write professional Oriented-Object code.</i></h4>
-<hr>
-<h6 align="center"><a href="https://github.com/MenaiAla/Cappuccino/pulls">Contribute</a>&nbsp &nbsp|&nbsp &nbsp <a  href="https://twitter.com/intent/tweet?text=Hello%20world">Share</a>&nbsp &nbsp|&nbsp &nbsp<a href="https://spectrum.chat/users/menai-ala-eddine">Chat</a></h6>
 
 <hr>
 
-> **Note**: This guide is inspired by Robert C. Martin's Book **Clean Code**, **Google Java Style Guide**, **Ali-baba Guide**, **Oracle Guide**, **hundreds of online blogs** and **our experience** with a simple and easy-to-learn style powered with **examples**.
+<h6 align="center"><a href="https://github.com/MenaiAla/Cappuccino/pulls">Contribute</a>&nbsp &nbsp|&nbsp &nbsp <a  href="https://twitter.com/intent/tweet?text=Cappuccino%20is%20out.A%20mostly%20reasonable%20approach%20and %20non-boring%20guide%20for%20Junior%20Developers%20to%20write%20professional%20Oriented-Object%20code.">Tweet</a>&nbsp &nbsp|&nbsp &nbsp<a href="https://spectrum.chat/users/menai-ala-eddine">Chat</a></h6>
+
+<hr>
+
+> **Note**: This guide is inspired by Robert C. Martin's Book **Clean Code**, **Google Java Style Guide**, **Ali-baba Guide**, **Oracle Guide**, **hundreds of online blogs** and **our experience** with a simple and easy-to-learn style powered by **examples**.
 > We try to reduce blah-blah and provide useful examples that cover all cases.
 
 <hr>
 
-In the old days, [Linus Torvalds](Trevals) said:
+In the old days, [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) said:
 
-> _Talking is shit, show me the code_
+> _Talking is shit, show me the code._
 
 In 2020 we say:
 
-> _Code that works is shit, show us the tests_
+> _Code that works is shit, show us the tests._
 
-[tweet](tweet)
+<a  href="https://twitter.com/intent/tweet?text=Code20%that20%works20%is20%shit,20%show20%us20%the20% tests.">Tweet</a>
 
 M. Ala Eddine says:
 
 > _Yesterday, I was writing code for machines. Today, I'm trying to write code for everyone._
 
-[tweet](tweet)
+<a  href="https://twitter.com/intent/tweet?text=Yesterday,20%I20%was20%writing20%code20%for20%machines.20%Today, 20%I'm20%trying20%to20%write20%code20%for20%everyone.">Tweet</a>
 
 <h2 style="font-size:24px;font-weight:bold">Why Cappuccino?</h2>
 
@@ -41,7 +43,7 @@ M. Ala Eddine says:
 
 - Built particularly for **junior developers** and also for all developers.
 
-- **Ease to read**, **Simple** explanations and **rich** with examples.
+- **Ease to read**, **simple** explanations and **rich** with examples.
 
 - Able to write **quality code** in the future.
 
@@ -51,30 +53,41 @@ M. Ala Eddine says:
 
 <h2 style="font-size:24px;font-weight:bold">Who read this guide</h2>
 
-**[Menai Ala Eddine](..)**
+**[Menai Ala Eddine](https://github.com/MenaiAla)**
 
 > Though I'm the writer I enjoyed it as a reader.
 
-**[Ilyes houdjej](..)**
+**[Ilyes houdjedje](https://github.com/ilyeSudo)**
 
 > Ilyes houdjej feedback.
 
 <h2 style="font-size:24px;font-weight:bold">Table of content</h2>
 
-1. **[Meaningfull Names](#Meaningful-Names)**
-2. **[Functions](#Functions)**
-3. **[Formatting](#Functions)**
-4. **[Comments](#Functions)**
-5. **[Objects & Data Structures](#Functions)**
-6. **[Error Handling](#Functions)**
-7. **[Classes](#Functions)**
-8. **[Kent Beck’s Four Rules Of Simple Design](#Functions)**
-9. **[Smells and Heuristics](#Functions)**
-10. **[In The Next Week](#Functions)**
-11. **[Contributors](#Functions)**
-12. **[Chat With Us](#Functions)**
+1. ### [Meaningfull Names](#Meaningful-Names)
 
-<a href="" style="font-size:24px;font-weight:bold">Meaningfull Names</a>
+2. ### [Functions](#Functions)
+
+3. ### [Formatting](#Formatting)
+
+4. ### [Comments](#Comments)
+
+5. ### [Objects and Data Structures](#Objects-and-Data-Structures)
+
+6. ### [Error Handling](#Error-Handling)
+
+7. ### [Classes](#Classes)
+
+8. ### [Kent Beck’s Four Rules Of Simple Design](#Kent-Beck’s-Four-Rules-Of-Simple-Design)
+
+9. ### [Smells and Heuristics](#Smells-and-Heuristics)
+
+10. ### [In The Next Week](#In-The-Next-Week)
+
+11. ### [Contributors](#Contributors)
+
+12. ### [Chat With Us](#Chat-With-Us)
+
+## [Meaningfull Names](#Meaningfull-Names)
 
 Programming is about names and names are everywhere, we name our variables, functions, classes, and packages. Indeed, our code contains only names.
 
@@ -284,17 +297,17 @@ public static final int pi = 3.14;
 
 ```java
 // bad
-static final ImmutableMap<String, Integer> facebookFounders = ImmutableMap.of("Mark Zuckerburg", 40, "Andrew McCollum", 38);
+static final ImmutableMap <String, Integer> facebookFounders = ImmutableMap.of("Mark Zuckerburg", 40, "Andrew McCollum", 38);
 ```
 
 ```java
 // good
-static final ImmutableMap<String, Integer> FACEBOOK_FOUNDERS = ImmutableMap.of("Mark Zuckerburg", 40, "Andrew McCollum", 38);
+static final ImmutableMap <String, Integer> FACEBOOK_FOUNDERS = ImmutableMap.of("Mark Zuckerburg", 40, "Andrew McCollum", 38);
 ```
 
 ```java
 // bad
-static  ImmutableMap<String, Integer> GOOGLE_FOUNDERS = ImmutableMap.of("Mark Zuckerburg", 40, "Andrew McCollum", 38);
+static  ImmutableMap <String, Integer> GOOGLE_FOUNDERS = ImmutableMap.of("Mark Zuckerburg", 40, "Andrew McCollum", 38);
 ```
 
 > > Because it's not a `constant`. We removed `final`
@@ -302,7 +315,7 @@ static  ImmutableMap<String, Integer> GOOGLE_FOUNDERS = ImmutableMap.of("Mark Zu
 
 ```java
 // good
-static  ImmutableMap<String, Integer> googleFounders= ImmutableMap.of("Lary Page", 58, "Sergey Bring", 52);
+static  ImmutableMap<String, Integer> googleFounders = ImmutableMap.of("Lary Page", 58, "Sergey Bring", 52);
 ```
 
 <h2 style="font-size:17px;font-weight:bold">Parameters Names</h2>
@@ -627,11 +640,10 @@ public boolean remove () {..}
 
 ```java
 // super
-
 public class Sticker {
 public boolean pin () {..}
 public boolean unpin () {..}
-    }
+}
 ```
 
 <h2 style="font-size:17px;font-weight:bold">Use Problem Domain Names</h2>
@@ -743,19 +755,20 @@ public class User {
 
 public class FullName {
   private String firstName;
-  private String lastName;}
+  private String lastName;
+}
 
-    public class Adress {
-    private String street;
-    private String city;
-    private String zipCode;
-    private String state;
-    }
+public class Adress {
+  private String street;
+  private String city;
+  private String zipCode;
+  private String state;
+}
 ```
 
 > > You can use `FullName` class for other classes in the future for example: `Customer`,`Advertiser`. Also, each user may have more than one `address`
 
-<a href="" style="font-size:24px;font-weight:bold">Functions</a>
+## [Functions](Functions)
 
 The reason we write functions is to decompose a larger concept into small concepts.
 
@@ -1395,7 +1408,7 @@ public void maxNumber (int firstNumber, int secondNumber) {
 }
 ```
 
-<a href="" style="font-size:24px;font-weight:bold">Formatting</a>
+## [Formatting](#Formatting)
 
 <h2 style="font-size:20px;font-weight:bold">Braces</h2>
 
@@ -1528,7 +1541,7 @@ double width;
 double height;
 ```
 
-<a href="" style="font-size:24px;font-weight:bold">Comments</a>
+## [Comments](#Comments)
 
 M. Ala Eddine says:
 
@@ -1642,7 +1655,7 @@ public Paper () { }
 private void pin () { }
 ```
 
-<a href="" style="font-size:24px;font-weight:bold">Objects & Data Structures</a>
+## [Objects and Data Structures](#Objects-and-Data-Structures)
 
 ```java
 public class User {
@@ -1707,7 +1720,7 @@ Stick on your head :
 
 **Objects hide their data behind abstractions and expose functions that operate on that data. Data structure expose their data and have no meaningful functions.**
 
-<a href="" style="font-size:24px;font-weight:bold">Error Handling</a>
+## [Error Handling](#Error-Handling)
 
 <h2 style="font-size:20px;font-weight:bold">Use Exceptions Rather Than Return Code</h2>
 
@@ -1845,7 +1858,7 @@ public void area (double width, double height) {
   }
 ```
 
-<a href="" style="font-size:24px;font-weight:bold">Classes</a>
+## [Classes](#Classes)
 
 OOP is about `classes` and `objects`.
 
@@ -2007,7 +2020,7 @@ public class Software {
 }
 ```
 
-<a href="" style="font-size:24px;font-weight:bold">Kent Beck’s Four Rules Of Simple Design</a>
+## [Kent Beck’s Four Rules Of Simple Design](#Kent-Beck’s-Four-Rules-Of-Simple-Design)
 
 They are four rules that help us in creating well-designed software.
 
@@ -2134,7 +2147,7 @@ Here, are few tips can help you to write code for everyone :
 
 By keeping our classes and methods minimal, we have an opportunity to eliminate duplication and avoid the chaos. Minimal means that classes and functions have a high-level of Single Responsibility Principale ( SRP ).
 
-<a href="" style="font-size:24px;font-weight:bold">Smells and Heuristics</a>
+## [Smells and Heuristics](#Smells-and-Heuristics)
 
 <h2 style="font-size:20px;font-weight:bold">Comments</h2>
 
@@ -2281,16 +2294,16 @@ Coverage tools report gaps in your testing strategy. They make it easy to ﬁnd 
 
 A slow test is a test that won’t get run. When things get tight, it’s the slow tests that will be dropped from the suite. So do what you must to keep your tests fast.
 
-<a href="" style="font-size:24px;font-weight:bold">In The Next Week</a>
+## [In The Next Week](#In-The-Next-Week)
 
 - Created separated folder (Examples) that contains only list of code exmaples.
 
-<a href="" style="font-size:24px;font-weight:bold">Contributors</a>
+## [Contributors](#Contributors)
 
 - [Menai Ala Eddine](https://github.com/MenaiAla)
 
 - [Ilyes Houdjej](https://github.com/ilyeSudo)
 
-<a href="" style="font-size:24px;font-weight:bold">Chat with us</a>
+## [Chat With Us](#Chat-With-Us)
 
 - Find us on [Spectrum](https://spectrum.chat/users/menai-ala-eddine)
