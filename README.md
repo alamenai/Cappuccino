@@ -702,8 +702,8 @@ Each variable has one context. Each function or method has one context. Each cla
 ```java
 // bad
 public class Computer {
-String v;
-String os;
+  String v;
+  String os;
 }
 ```
 
@@ -712,16 +712,16 @@ String os;
 ```java
 // good
 public class Computer {
-String version;
-String operatingSystem;
-    }
+  String version;
+  String operatingSystem;
+}
 ```
 
 ```java
 // super
 public class Computer {
-String version;
-List<OperatingSystem> operatingSystems;
+  String version;
+  List<OperatingSystem> operatingSystems;
 }
 
 
@@ -1315,7 +1315,9 @@ In the days before object-oriented programming, it was sometimes necessary to ha
 
 In other words, it would be better for `attack` to be invoked as
 
+```java
      alex.attack(jhon);
+```
 
 <h2 style="font-size:17px;font-weight:bold">Command Query Separation</h2>
 
