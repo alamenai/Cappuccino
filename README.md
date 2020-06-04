@@ -1799,24 +1799,24 @@ public void promote (Post post) {
 We expect that you will solve this problem by checking `null` status :
 
 ```java
-  ....
-  public void promote (Post post) {
-    if (post!=null) {
-       if (socialMedia!=null) {
-         Network network=socialMedia.getNetwork();
-       if (network!==null) {
+....
+public void promote (Post post) {
+  if (post!=null) {
+    if (socialMedia!=null) {
+       Network network=socialMedia.getNetwork();
+      if (network!==null) {
           network.share(post);
        }else {
           return null;
        }
-       }else {
+    }else {
        return null;
-       }
-       }else {
-        return null;
-       }
-         }
-      ....
+    }
+  }else {
+      return null;
+  }
+}
+....
 ```
 
 But did you notice when you use **JDK** methods they return `exceptions` for the case of `null` such as `NullPointerExpection`?
@@ -1861,7 +1861,7 @@ We could solve this problem by throwing **Custom Exception** in `area` method.
 public void area (double width, double height) {
   if (width==null || height==null) throw InvalidArgumentException("Invalid argument")
           return width * height;
-  }
+}
 ```
 
 ## [Classes](#Classes)
@@ -1979,15 +1979,15 @@ The Single Responsibility Principle (SRP) states that a class or module should h
 
      public void setOperatingSystemProvider (String provider) {..}
 
-      public void getMaterialType () {..}
+     public void getMaterialType () {..}
 
-      public void getScreenSize () {..}
+     public void getScreenSize () {..}
 
-      public void getKeyboardCategory () {..}
+     public void getKeyboardCategory () {..}
 
-      public void getGraphic () {..}
+     public void getGraphic () {..}
 
-      public void getCPU () {..}
+     public void getCPU () {..}
 
      }
 ```
@@ -1996,8 +1996,8 @@ The Single Responsibility Principle (SRP) states that a class or module should h
 // bad
 public class Computer {
 
- private Hardware hardware;
- private Software software;
+  private Hardware hardware;
+  private Software software;
 }
 
 public class Hardware {
@@ -2044,9 +2044,9 @@ According to Kent, a design is “simple” if it follows these rules:
 
 Menai Ala Eddine says :
 
-> Makeup make a woman beautiful. Tests make software powerful. Don't ignore tests.
+> Makeup make a woman beautiful. Tests make a software powerful. Don't ignore tests.
 
-[tweet](tweet)
+<a  href="https://twitter.com/intent/tweet?text=Makeup20%make20%a20%woman20%beautiful.20%Tests20%make20%a20%software20%powerful.20%Don't20%ignore20% tests.">Tweet</a>
 
 <h2 style="font-size:20px;font-weight:bold">Contains no duplication</h2>
 
@@ -2089,7 +2089,7 @@ public class Game {
         player.hasExtensions()) {
      ....
      }
-    }
+  }
 
   public void changeCombat (Player player) {
 
@@ -2097,6 +2097,7 @@ public class Game {
         player.hasExtensions()) {
      ..
     }
+  }
 }
 ```
 
@@ -2163,7 +2164,7 @@ Many developer add some _meta-data_ information in their comments such as `autho
 
 ```java
 /** I changed the name of this method from "commentWithImage" to "commentWithMedia" because I added other media types such as Audios.*/
-public void commentWithMedia(String comment, Media media) {..}
+public void commentWithMedia (String comment, Media media) {..}
 ```
 
 <h2 style="font-size:17px;font-weight:bold">2. Obselete Comment</h2>
@@ -2205,7 +2206,7 @@ if (user.getPassword() == decryptedPassword()) {
 * @return
 * @throws NotExistDestinationException
 */
-public gotToDestination(String destination) throws NotExistDestinationException
+public gotToDestination (String destination) throws NotExistDestinationException
 ```
 
 > > Please stop using this kind of Jdoc documentation in your code.
