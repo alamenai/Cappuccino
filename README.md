@@ -1050,10 +1050,9 @@ public boolean sendEmail (Email email) {
      if (isConnected()) {
      // sending email code-block
        }
-     }
-   catch (Exception e) {
-     // handle error
-     return false;
+     }catch (Exception e) {
+        // handle error
+        return false;
     }finally {
      // final action
      }
@@ -1099,6 +1098,7 @@ public boolean addSugar () {
 
 ```java
 // bad
+
 public boolean addSugar () {..}
 
 public boolean mixSugar () {
@@ -1114,6 +1114,7 @@ public boolean drinkMilk () {
 
 ```java
 //super
+
 public boolean drinkMilk () {
 // Did we mix sugar?
 // Move next
@@ -1377,9 +1378,9 @@ Duplication is the root of all evil in software. duplicated `functions`, `classe
 
 M. Ala Eddine says:
 
-> _I don't measure seniority by years, I measure it by code quality. I don't call myself a senior developer, I let my code talk instead of me. There are senior developers who write ugly code on StackOverflow._
+> _I don't measure seniority by years, I measure it by code quality. I don't call myself a senior developer, I let my code talks instead of me. There are so many senior developers who write ugly code on StackOverflow._
 
-[tweet](tweet)
+<a  href="https://twitter.com/intent/tweet?text=I20%don't20%measure20%seniority20%by20%years,20%I20%measure20%it20%by20%code20%quality.20%I20%don't20%call20%myself20%a20%senior20%developer,20%I20%let20%my20%code20%talk20%instead20%of20%me.20%There20%are20%senior20%developers20%who20%write20%ugly20%code20%on20%StackOverflow.">Tweet</a>
 
 **Junior Developer**
 
@@ -1549,9 +1550,10 @@ double height;
 
 M. Ala Eddine says:
 
-> _When I was a student and I don't have time to make my home coding project, I copy it from one of my classmate and I try to refactor it by changing names and adding a lot of comments. I use comment to cheat._
+> _When I was a student and I don't have time to make my home coding project, I copy it from one of my classmate and I try to refactor it by changing names and adding a lot of comments. I use comments to cheat._
 
-[tweet](tweet)
+<a  href="https://twitter.com/intent/tweet?text=When20%I20%was20%a20%student20%and20%I20%don't20%have20%time20%to20%make20%my20%home20%coding20%project,20%I20%copy20%it20%from20%one20%of20%my20%classmate20%and20%I20%try20%to20%refactor20%it20%by20%changing20%names
+and20%adding20%a20%lot20%of20%comments.20%I20%use20%comments20%to20%cheat">Tweet</a>
 
 ```java
 // very bad
