@@ -1304,7 +1304,7 @@ public class Combat {
 It doesn’t take long to look at the function signature and see:
 
 ```java
-      private void attack (Fighter attacked, Fighter attacker) {..}
+private void attack (Fighter attacked, Fighter attacker) {..}
 ```
 
 > > You guessed `jack` is the attacker?
