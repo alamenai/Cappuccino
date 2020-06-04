@@ -800,6 +800,8 @@ M. Ala Eddine says:
 
 > Both **name** and **parameters** will tell me what your function does.
 
+<a  href="https://twitter.com/intent/tweet?text=Both20%name20%and20%parameters20%will20%tell20%me20%what20%your 20%function20%does.">Tweet</a>
+
 ```java
 // bad
 // This function adds only one item
