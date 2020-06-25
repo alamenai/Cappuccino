@@ -1,3 +1,4 @@
+<p  align="center"><img src="logo.png" width="100"></p>
 <h1 align="center">Cappuccino</h1>
 
 <h4 align="center"><i>A mostly reasonable approach and non-boring guide for Junior Developers to write professional Oriented-Object code.</i></h4>
