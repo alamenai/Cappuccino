@@ -58,10 +58,6 @@ M. Ala Eddine says:
 
 > Though I'm the writer I enjoyed it as a reader.
 
-**[Ilyes houdjedje](https://github.com/ilyeSudo)**
-
-> Ilyes houdjej feedback.
-
 <h2 style="font-size:24px;font-weight:bold">Table of content</h2>
 
 1. ### [Meaningfull Names](#Meaningful-Names)
