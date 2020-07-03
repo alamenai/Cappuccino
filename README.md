@@ -2300,10 +2300,6 @@ Coverage tools report gaps in your testing strategy. They make it easy to ﬁnd 
 
 A slow test is a test that won’t get run. When things get tight, it’s the slow tests that will be dropped from the suite. So do what you must to keep your tests fast.
 
-## [In The Next Week](#In-The-Next-Week)
-
-- Created separated folder (Examples) that contains only list of code exmaples.
-
 ## [Contributors](#Contributors)
 
 - [Menai Ala Eddine](https://github.com/MenaiAla)
